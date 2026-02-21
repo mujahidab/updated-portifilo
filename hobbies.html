@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hobbies and Passions - Engr. Mujahid Mushtaq.">
+    <title>Hobbies | Engr. Mujahid Mushtaq</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hobbies-hero {
+            padding-top: 140px;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            padding-bottom: 6rem;
+        }
+
+        .hobby-card {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .hobby-img-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hobby-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .hobby-card:hover .hobby-img {
+            transform: scale(1.1);
+        }
+
+        .hobby-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .hobby-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hobby-desc {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hobbies-hero {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MM<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+                <li><a href="academic.html" class="nav-link">Academic</a></li>
+                <li><a href="hobbies.html" class="nav-link active" style="color: var(--primary);">Hobbies</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hobbies-hero">
+        <div class="container">
+            <h2 class="section-subtitle">Beyond the Workbench</h2>
+            <h1 class="hero-title">Creative Passions <br> & Life Interests</h1>
+            <p class="hero-bio" style="margin: 2rem auto;">
+                When I'm not designing circuits or writing code, I explore the world through these activities that fuel
+                my creativity and drive for excellence.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hobbies-grid">
+            <!-- Cricket -->
+            <article class="hobby-card glass-card">
+                <div class="hobby-img-container">
+                    <img src="assets/cricket_hobby.png" alt="Cricket" class="hobby-img">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title"><i class="fas fa-baseball-bat-ball"></i> Cricket</h3>
+                    <p class="hobby-desc">
+                        Cricket is more than just a sport to me; it's about strategy, teamwork, and persistence. I find
+                        the physics of the game fascinating and enjoy the mental discipline it requires during
+                        high-pressure moments on the field.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Touring -->
+            <article class="hobby-card glass-card">
+                <div class="hobby-img-container">
+                    <img src="assets/touring_hobby.png" alt="Touring" class="hobby-img">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title"><i class="fas fa-motorcycle"></i> Touring</h3>
+                    <p class="hobby-desc">
+                        Exploring new roads and cultures through touring allows me to disconnect and gain fresh
+                        perspectives. The freedom of the open road and the challenge of navigating diverse terrains
+                        mirror the problem-solving nature of engineering.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hiking & Photography -->
+            <article class="hobby-card glass-card">
+                <div class="hobby-img-container">
+                    <img src="assets/photography_hobby.png" alt="Hiking & Photography" class="hobby-img">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title"><i class="fas fa-camera"></i> Hiking & Photography</h3>
+                    <p class="hobby-desc">
+                        Hiking brings me closer to nature, while photography allows me to capture the intricate details
+                        of the world. Combining both helps me practice patience and attention to detail, which are
+                        essential in my technical projects.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 3D Design & Modeling -->
+            <article class="hobby-card glass-card">
+                <div class="hobby-img-container">
+                    <img src="assets/three_d_design_hobby.png" alt="3D Modeling & Animation" class="hobby-img">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title"><i class="fas fa-cube"></i> 3D Modeling & Animation</h3>
+                    <p class="hobby-desc">
+                        I love bringing ideas to life in the digital realm through 3D modeling. This hobby bridges the
+                        gap between my imagination and physical hardware, allowing me to prototype and refine my
+                        mechanical designs before fabrication.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <strong>Engr. Mujahid Mushtaq</strong></p>
+            <p class="copyright">&copy; <span id="year"></span> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

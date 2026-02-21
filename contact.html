@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Engr. Mujahid Mushtaq.">
+    <title>Contact | Engr. Mujahid Mushtaq</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MM<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+                <li><a href="academic.html" class="nav-link">Academic</a></li>
+                <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section-hero">
+        <div class="container">
+            <h1 class="hero-title">Get In <br><span class="primary-gradient">Touch</span></h1>
+            <p class="hero-bio">Have a question or a project proposal? I'm always open to discussing new engineering
+                opportunities and professional collaborations.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-grid"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding-bottom: 6rem;">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2 style="margin-bottom: 2rem; font-family: var(--font-heading);">Professional Links</h2>
+                <div class="contact-links" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <a href="mailto:mujahid804ab@gmail.com" class="contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <span>mujahid804ab@gmail.com</span>
+                    </a>
+                    <a href="http://www.linkedin.com/in/engr-mujahid-mushtaq-3ba479255" target="_blank"
+                        class="contact-box">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <div class="contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Abbottabad, Pakistan</span>
+                    </div>
+                    <a href="https://wa.me/923169204987" target="_blank" class="contact-box"
+                        style="background: rgba(37,211,102,0.08); border-color: rgba(37,211,102,0.3);">
+                        <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                        <span>+92 316 920 4987</span>
+                    </a>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container glass-card" style="padding: 3rem; margin-top: 3rem;">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Let's talk about..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <strong>Engr. Mujahid Mushtaq</strong></p>
+            <p class="copyright">&copy; <span id="year"></span> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
